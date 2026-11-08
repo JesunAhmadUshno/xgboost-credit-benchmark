@@ -1,0 +1,11 @@
+# Pinned stack for this study (Python 3.12). The numerical core
+# matches the sibling mlops-evidence-lab pins, under which the
+# subject's published champion figures were reproduced exactly.
+numpy==2.5.4
+pandas==3.1.1
+scikit-learn==1.9.1
+scipy==1.18.1
+xlrd==2.0.2
+xgboost==3.4.1
+lightgbm==4.7.0
+pytest==9.2.0
