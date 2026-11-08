@@ -1,0 +1,329 @@
+{
+ "control-champion": {
+  "params": {
+   "max_iter": 300,
+   "learning_rate": 0.06,
+   "max_depth": 3
+  },
+  "metrics": {
+   "auc": 0.781,
+   "ks": 0.4196,
+   "gini": 0.5621,
+   "brier": 0.1355
+  },
+  "metrics_full": {
+   "auc": 0.781032,
+   "ks": 0.419607,
+   "gini": 0.562063,
+   "brier": 0.135543
+  },
+  "metrics_by_rep": [
+   {
+    "auc": 0.781,
+    "ks": 0.4196,
+    "gini": 0.5621,
+    "brier": 0.1355
+   },
+   {
+    "auc": 0.781,
+    "ks": 0.4196,
+    "gini": 0.5621,
+    "brier": 0.1355
+   },
+   {
+    "auc": 0.781,
+    "ks": 0.4196,
+    "gini": 0.5621,
+    "brier": 0.1355
+   }
+  ],
+  "fit_times_s": [
+   1.325,
+   1.182,
+   1.497
+  ],
+  "score_times_s": [
+   0.092,
+   0.104,
+   0.11
+  ],
+  "fit_time_median_s": 1.325,
+  "score_time_median_s": 0.104,
+  "tuning": null
+ },
+ "xgboost-default": {
+  "params": {},
+  "metrics": {
+   "auc": 0.7598,
+   "ks": 0.3957,
+   "gini": 0.5196,
+   "brier": 0.142
+  },
+  "metrics_full": {
+   "auc": 0.759796,
+   "ks": 0.3957,
+   "gini": 0.519591,
+   "brier": 0.142036
+  },
+  "metrics_by_rep": [
+   {
+    "auc": 0.7598,
+    "ks": 0.3957,
+    "gini": 0.5196,
+    "brier": 0.142
+   },
+   {
+    "auc": 0.7598,
+    "ks": 0.3957,
+    "gini": 0.5196,
+    "brier": 0.142
+   },
+   {
+    "auc": 0.7598,
+    "ks": 0.3957,
+    "gini": 0.5196,
+    "brier": 0.142
+   }
+  ],
+  "fit_times_s": [
+   0.972,
+   1.402,
+   1.096
+  ],
+  "score_times_s": [
+   0.006,
+   0.005,
+   0.067
+  ],
+  "fit_time_median_s": 1.096,
+  "score_time_median_s": 0.006,
+  "tuning": null
+ },
+ "lightgbm-default": {
+  "params": {},
+  "metrics": {
+   "auc": 0.7769,
+   "ks": 0.4237,
+   "gini": 0.5537,
+   "brier": 0.1361
+  },
+  "metrics_full": {
+   "auc": 0.776853,
+   "ks": 0.423724,
+   "gini": 0.553706,
+   "brier": 0.136087
+  },
+  "metrics_by_rep": [
+   {
+    "auc": 0.7769,
+    "ks": 0.4237,
+    "gini": 0.5537,
+    "brier": 0.1361
+   },
+   {
+    "auc": 0.7769,
+    "ks": 0.4237,
+    "gini": 0.5537,
+    "brier": 0.1361
+   },
+   {
+    "auc": 0.7769,
+    "ks": 0.4237,
+    "gini": 0.5537,
+    "brier": 0.1361
+   }
+  ],
+  "fit_times_s": [
+   1.204,
+   0.616,
+   2.306
+  ],
+  "score_times_s": [
+   0.078,
+   0.105,
+   0.09
+  ],
+  "fit_time_median_s": 1.204,
+  "score_time_median_s": 0.09,
+  "tuning": null
+ },
+ "xgboost-tuned": {
+  "params": {
+   "n_estimators": 200,
+   "learning_rate": 0.04,
+   "max_depth": 3,
+   "min_child_weight": 10,
+   "subsample": 0.8,
+   "colsample_bytree": 0.8,
+   "reg_lambda": 0.1
+  },
+  "metrics": {
+   "auc": 0.7822,
+   "ks": 0.4196,
+   "gini": 0.5643,
+   "brier": 0.1351
+  },
+  "metrics_full": {
+   "auc": 0.782168,
+   "ks": 0.419636,
+   "gini": 0.564335,
+   "brier": 0.135146
+  },
+  "metrics_by_rep": [
+   {
+    "auc": 0.7822,
+    "ks": 0.4196,
+    "gini": 0.5643,
+    "brier": 0.1351
+   },
+   {
+    "auc": 0.7822,
+    "ks": 0.4196,
+    "gini": 0.5643,
+    "brier": 0.1351
+   },
+   {
+    "auc": 0.7822,
+    "ks": 0.4196,
+    "gini": 0.5643,
+    "brier": 0.1351
+   }
+  ],
+  "fit_times_s": [
+   2.088,
+   2.287,
+   0.699
+  ],
+  "score_times_s": [
+   0.011,
+   0.009,
+   0.005
+  ],
+  "fit_time_median_s": 2.088,
+  "score_time_median_s": 0.009,
+  "tuning": {
+   "n_trials": 24,
+   "best_cv_auc": 0.7865,
+   "wall_time_s": 260.709
+  }
+ },
+ "lightgbm-tuned": {
+  "params": {
+   "n_estimators": 200,
+   "learning_rate": 0.04,
+   "num_leaves": 15,
+   "min_child_samples": 40,
+   "subsample": 1.0,
+   "colsample_bytree": 0.8,
+   "reg_lambda": 1.0,
+   "subsample_freq": 1
+  },
+  "metrics": {
+   "auc": 0.7816,
+   "ks": 0.4239,
+   "gini": 0.5633,
+   "brier": 0.1348
+  },
+  "metrics_full": {
+   "auc": 0.781636,
+   "ks": 0.42386,
+   "gini": 0.563273,
+   "brier": 0.134798
+  },
+  "metrics_by_rep": [
+   {
+    "auc": 0.7816,
+    "ks": 0.4239,
+    "gini": 0.5633,
+    "brier": 0.1348
+   },
+   {
+    "auc": 0.7816,
+    "ks": 0.4239,
+    "gini": 0.5633,
+    "brier": 0.1348
+   },
+   {
+    "auc": 0.7816,
+    "ks": 0.4239,
+    "gini": 0.5633,
+    "brier": 0.1348
+   }
+  ],
+  "fit_times_s": [
+   1.104,
+   1.704,
+   2.972
+  ],
+  "score_times_s": [
+   0.089,
+   0.125,
+   0.102
+  ],
+  "fit_time_median_s": 1.704,
+  "score_time_median_s": 0.102,
+  "tuning": {
+   "n_trials": 24,
+   "best_cv_auc": 0.7851,
+   "wall_time_s": 349.3
+  }
+ },
+ "sklearn-tuned": {
+  "params": {
+   "max_iter": 800,
+   "learning_rate": 0.06,
+   "max_leaf_nodes": 15,
+   "min_samples_leaf": 80,
+   "l2_regularization": 0.0
+  },
+  "metrics": {
+   "auc": 0.7812,
+   "ks": 0.4218,
+   "gini": 0.5625,
+   "brier": 0.1352
+  },
+  "metrics_full": {
+   "auc": 0.781238,
+   "ks": 0.421758,
+   "gini": 0.562476,
+   "brier": 0.135226
+  },
+  "metrics_by_rep": [
+   {
+    "auc": 0.7812,
+    "ks": 0.4218,
+    "gini": 0.5625,
+    "brier": 0.1352
+   },
+   {
+    "auc": 0.7812,
+    "ks": 0.4218,
+    "gini": 0.5625,
+    "brier": 0.1352
+   },
+   {
+    "auc": 0.7812,
+    "ks": 0.4218,
+    "gini": 0.5625,
+    "brier": 0.1352
+   }
+  ],
+  "fit_times_s": [
+   3.487,
+   1.276,
+   2.012
+  ],
+  "score_times_s": [
+   0.094,
+   0.076,
+   0.085
+  ],
+  "fit_time_median_s": 2.012,
+  "score_time_median_s": 0.085,
+  "tuning": {
+   "n_trials": 24,
+   "best_cv_auc": 0.7856,
+   "wall_time_s": 201.392
+  }
+ }
+}

@@ -1,0 +1,386 @@
+[
+ {
+  "trial": 1,
+  "params": {
+   "max_iter": 500,
+   "learning_rate": 0.1,
+   "max_leaf_nodes": 31,
+   "min_samples_leaf": 40,
+   "l2_regularization": 0.0
+  },
+  "fold_aucs": [
+   0.7865,
+   0.7832,
+   0.7734
+  ],
+  "mean_cv_auc": 0.781
+ },
+ {
+  "trial": 2,
+  "params": {
+   "max_iter": 300,
+   "learning_rate": 0.04,
+   "max_leaf_nodes": 31,
+   "min_samples_leaf": 40,
+   "l2_regularization": 0.0
+  },
+  "fold_aucs": [
+   0.7882,
+   0.7832,
+   0.7763
+  ],
+  "mean_cv_auc": 0.7826
+ },
+ {
+  "trial": 3,
+  "params": {
+   "max_iter": 800,
+   "learning_rate": 0.02,
+   "max_leaf_nodes": 15,
+   "min_samples_leaf": 40,
+   "l2_regularization": 1.0
+  },
+  "fold_aucs": [
+   0.7917,
+   0.7849,
+   0.7788
+  ],
+  "mean_cv_auc": 0.7851
+ },
+ {
+  "trial": 4,
+  "params": {
+   "max_iter": 500,
+   "learning_rate": 0.1,
+   "max_leaf_nodes": 63,
+   "min_samples_leaf": 40,
+   "l2_regularization": 1.0
+  },
+  "fold_aucs": [
+   0.7834,
+   0.7787,
+   0.7705
+  ],
+  "mean_cv_auc": 0.7775
+ },
+ {
+  "trial": 5,
+  "params": {
+   "max_iter": 200,
+   "learning_rate": 0.04,
+   "max_leaf_nodes": 15,
+   "min_samples_leaf": 80,
+   "l2_regularization": 0.1
+  },
+  "fold_aucs": [
+   0.7924,
+   0.785,
+   0.779
+  ],
+  "mean_cv_auc": 0.7855
+ },
+ {
+  "trial": 6,
+  "params": {
+   "max_iter": 200,
+   "learning_rate": 0.04,
+   "max_leaf_nodes": 31,
+   "min_samples_leaf": 40,
+   "l2_regularization": 1.0
+  },
+  "fold_aucs": [
+   0.7884,
+   0.7826,
+   0.7766
+  ],
+  "mean_cv_auc": 0.7825
+ },
+ {
+  "trial": 7,
+  "params": {
+   "max_iter": 300,
+   "learning_rate": 0.04,
+   "max_leaf_nodes": 15,
+   "min_samples_leaf": 80,
+   "l2_regularization": 0.1
+  },
+  "fold_aucs": [
+   0.7924,
+   0.785,
+   0.779
+  ],
+  "mean_cv_auc": 0.7855
+ },
+ {
+  "trial": 8,
+  "params": {
+   "max_iter": 800,
+   "learning_rate": 0.04,
+   "max_leaf_nodes": 15,
+   "min_samples_leaf": 80,
+   "l2_regularization": 0.1
+  },
+  "fold_aucs": [
+   0.7924,
+   0.785,
+   0.779
+  ],
+  "mean_cv_auc": 0.7855
+ },
+ {
+  "trial": 9,
+  "params": {
+   "max_iter": 800,
+   "learning_rate": 0.04,
+   "max_leaf_nodes": 15,
+   "min_samples_leaf": 80,
+   "l2_regularization": 0.1
+  },
+  "fold_aucs": [
+   0.7924,
+   0.785,
+   0.779
+  ],
+  "mean_cv_auc": 0.7855
+ },
+ {
+  "trial": 10,
+  "params": {
+   "max_iter": 800,
+   "learning_rate": 0.1,
+   "max_leaf_nodes": 31,
+   "min_samples_leaf": 20,
+   "l2_regularization": 0.1
+  },
+  "fold_aucs": [
+   0.7857,
+   0.7807,
+   0.7747
+  ],
+  "mean_cv_auc": 0.7804
+ },
+ {
+  "trial": 11,
+  "params": {
+   "max_iter": 500,
+   "learning_rate": 0.02,
+   "max_leaf_nodes": 15,
+   "min_samples_leaf": 80,
+   "l2_regularization": 0.0
+  },
+  "fold_aucs": [
+   0.7915,
+   0.7855,
+   0.779
+  ],
+  "mean_cv_auc": 0.7853
+ },
+ {
+  "trial": 12,
+  "params": {
+   "max_iter": 300,
+   "learning_rate": 0.06,
+   "max_leaf_nodes": 63,
+   "min_samples_leaf": 20,
+   "l2_regularization": 0.0
+  },
+  "fold_aucs": [
+   0.7834,
+   0.7818,
+   0.7733
+  ],
+  "mean_cv_auc": 0.7795
+ },
+ {
+  "trial": 13,
+  "params": {
+   "max_iter": 300,
+   "learning_rate": 0.06,
+   "max_leaf_nodes": 15,
+   "min_samples_leaf": 20,
+   "l2_regularization": 0.1
+  },
+  "fold_aucs": [
+   0.7922,
+   0.7838,
+   0.7785
+  ],
+  "mean_cv_auc": 0.7848
+ },
+ {
+  "trial": 14,
+  "params": {
+   "max_iter": 300,
+   "learning_rate": 0.06,
+   "max_leaf_nodes": 15,
+   "min_samples_leaf": 20,
+   "l2_regularization": 0.0
+  },
+  "fold_aucs": [
+   0.7925,
+   0.7836,
+   0.7783
+  ],
+  "mean_cv_auc": 0.7848
+ },
+ {
+  "trial": 15,
+  "params": {
+   "max_iter": 200,
+   "learning_rate": 0.02,
+   "max_leaf_nodes": 63,
+   "min_samples_leaf": 40,
+   "l2_regularization": 1.0
+  },
+  "fold_aucs": [
+   0.7848,
+   0.7806,
+   0.7722
+  ],
+  "mean_cv_auc": 0.7792
+ },
+ {
+  "trial": 16,
+  "params": {
+   "max_iter": 800,
+   "learning_rate": 0.1,
+   "max_leaf_nodes": 15,
+   "min_samples_leaf": 40,
+   "l2_regularization": 1.0
+  },
+  "fold_aucs": [
+   0.7923,
+   0.7842,
+   0.7786
+  ],
+  "mean_cv_auc": 0.785
+ },
+ {
+  "trial": 17,
+  "params": {
+   "max_iter": 500,
+   "learning_rate": 0.06,
+   "max_leaf_nodes": 31,
+   "min_samples_leaf": 40,
+   "l2_regularization": 0.1
+  },
+  "fold_aucs": [
+   0.7881,
+   0.7822,
+   0.7753
+  ],
+  "mean_cv_auc": 0.7819
+ },
+ {
+  "trial": 18,
+  "params": {
+   "max_iter": 800,
+   "learning_rate": 0.04,
+   "max_leaf_nodes": 31,
+   "min_samples_leaf": 80,
+   "l2_regularization": 0.0
+  },
+  "fold_aucs": [
+   0.7891,
+   0.7839,
+   0.7752
+  ],
+  "mean_cv_auc": 0.7827
+ },
+ {
+  "trial": 19,
+  "params": {
+   "max_iter": 800,
+   "learning_rate": 0.06,
+   "max_leaf_nodes": 15,
+   "min_samples_leaf": 80,
+   "l2_regularization": 0.0
+  },
+  "fold_aucs": [
+   0.7924,
+   0.785,
+   0.7794
+  ],
+  "mean_cv_auc": 0.7856
+ },
+ {
+  "trial": 20,
+  "params": {
+   "max_iter": 800,
+   "learning_rate": 0.02,
+   "max_leaf_nodes": 15,
+   "min_samples_leaf": 40,
+   "l2_regularization": 1.0
+  },
+  "fold_aucs": [
+   0.7917,
+   0.7849,
+   0.7788
+  ],
+  "mean_cv_auc": 0.7851
+ },
+ {
+  "trial": 21,
+  "params": {
+   "max_iter": 800,
+   "learning_rate": 0.1,
+   "max_leaf_nodes": 63,
+   "min_samples_leaf": 80,
+   "l2_regularization": 1.0
+  },
+  "fold_aucs": [
+   0.7817,
+   0.7774,
+   0.7715
+  ],
+  "mean_cv_auc": 0.7769
+ },
+ {
+  "trial": 22,
+  "params": {
+   "max_iter": 500,
+   "learning_rate": 0.06,
+   "max_leaf_nodes": 15,
+   "min_samples_leaf": 80,
+   "l2_regularization": 1.0
+  },
+  "fold_aucs": [
+   0.7924,
+   0.7848,
+   0.7788
+  ],
+  "mean_cv_auc": 0.7853
+ },
+ {
+  "trial": 23,
+  "params": {
+   "max_iter": 300,
+   "learning_rate": 0.1,
+   "max_leaf_nodes": 15,
+   "min_samples_leaf": 80,
+   "l2_regularization": 0.0
+  },
+  "fold_aucs": [
+   0.7913,
+   0.7839,
+   0.7778
+  ],
+  "mean_cv_auc": 0.7843
+ },
+ {
+  "trial": 24,
+  "params": {
+   "max_iter": 200,
+   "learning_rate": 0.1,
+   "max_leaf_nodes": 31,
+   "min_samples_leaf": 40,
+   "l2_regularization": 1.0
+  },
+  "fold_aucs": [
+   0.789,
+   0.7816,
+   0.7754
+  ],
+  "mean_cv_auc": 0.782
+ }
+]

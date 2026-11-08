@@ -1,0 +1,27 @@
+{
+ "machine": "htch-runtime",
+ "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.39",
+ "cpu_count": 4,
+ "omp_num_threads": "4",
+ "started_utc": "2026-11-08T14:56:23.414737+00:00",
+ "versions": {
+  "python": "3.12.3",
+  "numpy": "2.5.4",
+  "pandas": "3.1.1",
+  "scikit_learn": "1.9.1",
+  "xgboost": "3.4.1",
+  "lightgbm": "4.7.0"
+ },
+ "data_file": "data/credit_card.xls",
+ "data_sha256": "30c6be3abd8dcfd3e6096c828bad8c2f011238620f5369220bd60cfc82700933",
+ "train_rows": 21000,
+ "test_rows": 9000,
+ "n_features_after_preprocessing": 24,
+ "published_champion": {
+  "auc": 0.781,
+  "ks": 0.4196,
+  "brier": 0.1355
+ },
+ "gate_failed": false,
+ "finished_utc": "2026-11-08T15:10:26.783343+00:00"
+}

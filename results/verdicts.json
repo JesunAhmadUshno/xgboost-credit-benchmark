@@ -1,5 +1,17 @@
 {
- "H1": "NOT RUN",
- "H2": "NOT RUN",
- "H3": "NOT RUN"
+ "H1": "INCONCLUSIVE",
+ "H2": "INCONCLUSIVE",
+ "H3": "CONFIRMED",
+ "h1_delta_auc": 0.0012,
+ "h2_delta_ks": 0.0043,
+ "order_by_auc": [
+  "xgboost-tuned",
+  "lightgbm-tuned",
+  "control-champion"
+ ],
+ "order_by_brier": [
+  "lightgbm-tuned",
+  "xgboost-tuned",
+  "control-champion"
+ ]
 }
