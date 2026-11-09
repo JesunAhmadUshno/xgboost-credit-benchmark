@@ -1,6 +1,6 @@
 # CI-only pin set for the Python 3.11 job (DECISIONS.md D6).
 # Runs the unit tests; never used for measured runs.
-numpy==2.2.6
+numpy==2.5.4
 pandas==2.3.2
 scikit-learn==1.7.2
 scipy==1.16.3
