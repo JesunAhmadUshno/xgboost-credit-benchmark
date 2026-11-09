@@ -63,3 +63,18 @@ own tests/test_units.py; an unscoped pytest run collides
 on the duplicate module name. pytest.ini sets testpaths
 to this repo's tests/ and excludes data/, which also keeps
 the subject's own test suite out of this repo's CI signal.
+
+## D6: CI adds Python 3.11 for the unit tests on a separate pin set (2026-11-08, amends D4)
+
+The portfolio standard v2 requires CI on Python 3.11 and
+3.12. The machine-of-record stack in requirements.txt
+cannot install on 3.11 (D4 still holds for it), so the
+3.11 job installs requirements-py311.txt: the newest
+releases of numpy, pandas, scikit-learn and scipy that
+support 3.11, pinned. That job runs the unit and layout
+tests and the results-regeneration check only; it says
+the code works on 3.11, not that the measured numbers
+would reproduce there. Measured numbers come only from
+the pinned 3.12 stack on the machine of record. This is
+a CI change, made after the results, and changes no
+protocol item.
