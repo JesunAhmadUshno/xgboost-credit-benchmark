@@ -1,0 +1,114 @@
+{
+ "method": {
+  "bootstrap": "paired resampling of the frozen test rows, percentile 95% intervals, unrounded deltas",
+  "splits": "frozen protocol re-run per split via benchmark.tune_arm; control at published config",
+  "data_sha256": "30c6be3abd8dcfd3e6096c828bad8c2f011238620f5369220bd60cfc82700933",
+  "machine": "htch-runtime",
+  "versions": {
+   "python": "3.12.3",
+   "numpy": "2.5.4",
+   "pandas": "3.1.1",
+   "scikit_learn": "1.9.1",
+   "xgboost": "3.4.1",
+   "lightgbm": "4.7.0"
+  }
+ },
+ "bootstrap": {
+  "status": "ok",
+  "refit_check": {
+   "control-champion": {
+    "recomputed": {
+     "auc": 0.781032,
+     "ks": 0.419607,
+     "brier": 0.135543
+    },
+    "recorded": {
+     "auc": 0.781032,
+     "ks": 0.419607,
+     "gini": 0.562063,
+     "brier": 0.135543
+    },
+    "max_abs_diff": 4.516806582643973e-07
+   },
+   "xgboost-tuned": {
+    "recomputed": {
+     "auc": 0.782168,
+     "ks": 0.419636,
+     "brier": 0.135146
+    },
+    "recorded": {
+     "auc": 0.782168,
+     "ks": 0.419636,
+     "gini": 0.564335,
+     "brier": 0.135146
+    },
+    "max_abs_diff": 4.001737308190201e-07
+   },
+   "lightgbm-tuned": {
+    "recomputed": {
+     "auc": 0.781636,
+     "ks": 0.42386,
+     "brier": 0.134798
+    },
+    "recorded": {
+     "auc": 0.781636,
+     "ks": 0.42386,
+     "gini": 0.563273,
+     "brier": 0.134798
+    },
+    "max_abs_diff": 4.967793794108388e-07
+   }
+  },
+  "n_test_rows": 9000,
+  "n_resamples": 5000,
+  "seed": 20261117,
+  "intervals": {
+   "xgboost-tuned auc_delta": {
+    "point_estimate_unrounded": 0.0011359435336028012,
+    "ci95_percentile": [
+     -0.000610825227960829,
+     0.0029120387344434132
+    ],
+    "bootstrap_mean": 0.0011216512773210218,
+    "bootstrap_sd": 0.0009052150637011245,
+    "frac_resamples_le_zero": 0.1026,
+    "includes_zero": true
+   },
+   "xgboost-tuned ks_delta": {
+    "point_estimate_unrounded": 2.873538714198709e-05,
+    "ci95_percentile": [
+     -0.006821470880285503,
+     0.00749798126260408
+    ],
+    "bootstrap_mean": 0.0004292815615248153,
+    "bootstrap_sd": 0.0037407636019263614,
+    "frac_resamples_le_zero": 0.453,
+    "includes_zero": true
+   },
+   "lightgbm-tuned auc_delta": {
+    "point_estimate_unrounded": 0.0006048404867130541,
+    "ci95_percentile": [
+     -0.00176860372591576,
+     0.002982314945820359
+    ],
+    "bootstrap_mean": 0.0005901555378482207,
+    "bootstrap_sd": 0.0011958666168682837,
+    "frac_resamples_le_zero": 0.3066,
+    "includes_zero": true
+   },
+   "lightgbm-tuned ks_delta": {
+    "point_estimate_unrounded": 0.004252407341095998,
+    "ci95_percentile": [
+     -0.002502606752959374,
+     0.012353295497957705
+    ],
+    "bootstrap_mean": 0.004793826135121205,
+    "bootstrap_sd": 0.0038057990873361877,
+    "frac_resamples_le_zero": 0.1058,
+    "includes_zero": true
+   }
+  }
+ },
+ "amendment": "A1 (DECISIONS.md D6, 2026-11-17)",
+ "updated_utc": "2026-11-17T23:07:16.581471+00:00"
+}
